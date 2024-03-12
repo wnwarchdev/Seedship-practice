@@ -1,2 +1,24 @@
 /* color backgrounds */
 $background-page: #000000;
+$font-general: green;
+
+body {
+  background-color: $background-page;
+  margin: auto;
+  color: $font-general;
+  display: flex;
+  justify-content: center;
+}
+
+#terminal {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: $font-general;
+  width: 100%;
+  height: 100vh;
+  max-width: 400px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
