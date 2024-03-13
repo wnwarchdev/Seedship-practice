@@ -1,21 +1,35 @@
 /* color backgrounds */
-$background-page: #000000;
-$font-general: green;
+$black: #000000;
+$blue: #0000aa;
+$green: #00aa00;
+$cyan: #00aaaa;
+$red: #aa0000;
+$magenta: #aa00aa;
+$brown: #aa5500;
+$light-gray: #aaaaaa;
+$dark-gray: #555555;
+$light-blue: #5555ff;
+$light-green: #55ff55;
+$light-cyan: #55ffff;
+$light-red: #ff5555;
+$light-magenta: #ff55ff;
+$yellow: #ffff55;
+$white: #ffffff;
 
 body {
-  background-color: $background-page;
+  background-color: $black;
   margin: auto;
-  color: $font-general;
+  color: $green;
   display: flex;
   justify-content: center;
 }
 
 #terminal {
   border-width: 1px;
-  border-style: dashed;
-  border-color: $font-general;
+  border-style: solid;
+  border-color: $white;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   max-width: 400px;
   margin: 5px;
   display: flex;
