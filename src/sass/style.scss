@@ -16,12 +16,20 @@ $light-magenta: #ff55ff;
 $yellow: #ffff55;
 $white: #ffffff;
 
+@font-face {
+  font-family: "dosFont";
+  src: url("../fonts/WebPlus_ToshibaTxL1_8x16.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: $black;
   margin: auto;
   color: $green;
   display: flex;
   justify-content: center;
+  font-family: "dosFont", normal;
 }
 
 #terminal {
@@ -35,4 +43,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button {
+  background-color: $black;
+  border-style: solid;
+  border-color: $blue;
+  font-family: "dosFont", normal;
+  color: $blue;
 }
