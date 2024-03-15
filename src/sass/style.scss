@@ -1,3 +1,5 @@
+@import "_normalize.css";
+
 /* color backgrounds */
 $black: #000000;
 $blue: #0000aa;
@@ -48,7 +50,21 @@ body {
 button {
   background-color: $black;
   border-style: solid;
-  border-color: $blue;
+  border-color: $cyan;
   font-family: "dosFont", normal;
-  color: $blue;
+  color: $cyan;
+  width: auto;
+  flex-basis: 100%;
+}
+
+#hold,
+#scanners,
+#systems,
+#databases {
+  display: flex;
+}
+
+#hold button {
+  background-color: $cyan;
+  color: $black;
 }
