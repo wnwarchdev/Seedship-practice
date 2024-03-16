@@ -28,7 +28,7 @@ $white: #ffffff;
 body {
   background-color: $black;
   margin: auto;
-  color: $green;
+  color: $black;
   display: flex;
   justify-content: center;
   font-family: "dosFont", normal;
@@ -67,4 +67,28 @@ button {
 #hold button {
   background-color: $cyan;
   color: $black;
+}
+
+#event {
+  margin-top: 20px;
+  border-style: solid;
+  background-color: $dark-gray;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+#eventName {
+  background-color: $blue;
+  margin: 0px;
+  text-align: center;
+  color: $light-green;
+}
+
+#eventReport {
+  width: 360px;
+  border-style: solid;
+  border-color: $black;
+  align-self: center;
+  margin: 5px;
 }
