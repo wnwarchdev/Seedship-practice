@@ -82,7 +82,7 @@ button {
   background-color: $blue;
   margin: 0px;
   text-align: center;
-  color: $light-green;
+  color: $white;
 }
 
 #eventReport {
@@ -116,4 +116,37 @@ button {
 .selected {
   background-color: $yellow;
   color: $red;
+}
+
+#execute {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  border-style: solid;
+  background-color: $dark-gray;
+  width: 380px;
+  background-color: $red;
+  button {
+    border: none;
+    color: $black;
+    height: 35px;
+    margin: 1px;
+    box-shadow: inset 0 0 0 2px;
+  }
+}
+
+.executeButton {
+  background-color: $red;
+}
+
+.continueButton {
+  background-color: $cyan;
+}
+
+.awaitButton {
+  background-color: $dark-gray;
+}
+
+.hidden {
+  display: none;
 }
