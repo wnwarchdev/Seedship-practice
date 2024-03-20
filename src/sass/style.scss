@@ -162,5 +162,7 @@ button {
     background-color: $cyan;
     width: 40px;
     text-align: left;
+    flex-basis: content;
+    margin-bottom: 2px;
   }
 }
