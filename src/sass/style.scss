@@ -166,3 +166,28 @@ button {
     margin-bottom: 2px;
   }
 }
+
+.health_full {
+  color: $cyan;
+  //border-color: $cyan;
+}
+
+.health_damaged {
+  color: $yellow;
+  //border-color: $yellow;
+}
+
+.health_failure {
+  color: $light-red;
+  //border-color: $light-red;
+}
+
+.health_critical {
+  color: $red;
+  border-color: $red;
+}
+
+.health_dead {
+  color: $dark-gray;
+  border-color: $dark-gray;
+}
