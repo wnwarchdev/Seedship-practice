@@ -57,14 +57,14 @@ button {
   flex-basis: 100%;
 }
 
-#hold,
+#cargo,
 #scanners,
 #systems,
 #databases {
   display: flex;
 }
 
-#hold button {
+#cargo button {
   background-color: $cyan;
   color: $black;
 }
