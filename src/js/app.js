@@ -19,6 +19,8 @@ let databaseCultural = 100;
 
 let eventCounter = 0;
 
+// buttons
+
 const cargoColonistsButton = document.getElementById("cargoColonists");
 const cargoProbesButton = document.getElementById("cargoProbes");
 const scannerAtmosphereButton = document.getElementById("scannerAtmosphere");
@@ -30,6 +32,15 @@ const systemLandingButton = document.getElementById("systemLanding");
 const systemConstructionButton = document.getElementById("systemConstruction");
 const databaseScientificButton = document.getElementById("databaseScientific");
 const databaseCulturalButton = document.getElementById("databaseCultural");
+
+const executeButton = document.getElementById(`executeButton`);
+const continueButton = document.getElementById(`continueButton`);
+const awaitButton = document.getElementById(`awaitButton`);
+
+const helpButton = document.getElementById(`helpButton`);
+const hibernateButton = document.getElementById(`hibernateButton`);
+const shutdownButton = document.getElementById(`shutdownButton`);
+const terminateButton = document.getElementById(`terminateButton`);
 
 const events = {
   name: "PROTOPLANETARY DISC",
