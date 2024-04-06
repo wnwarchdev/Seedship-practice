@@ -62,6 +62,39 @@ setInterval(() => {
   awaitButton.innerHTML = awaitSpinner(awaitButton.innerHTML);
 }, 300);
 
+const upgrade = {
+  upgradeScanner: {
+    name: `Scanner Upgrade`,
+    check: `function`,
+    description: `As it moves from star to star, the seedship is gathering more data about extrasolar planets than its builders could give it. It is designed to learn from this data in order to predict which stars are likely to have desirable planets. The seedship has now gathered enough data to upgrade one of its sensors to work at interstellar distances, so the guidance system can avoid planets that that sensor reveals to be undesirable.`,
+    option1: {
+      name: `ATM: atmosphere scanner`,
+      description: `Atmosphere scanner upgraded to work at long range. Damage to the sensor may still result in the seedship arriving at an unsuitable planet.`,
+      reward: `function`,
+    },
+    option2: {
+      name: `GRAV: gravity scanner`,
+      description: `Gravity scanner upgraded to work at long range. Damage to the sensor may still result in the seedship arriving at an unsuitable planet.`,
+      reward: `function`,
+    },
+    option3: {
+      name: `TEMP: temperature scanner`,
+      description: `Temperature scanner upgraded to work at long range. Damage to the sensor may still result in the seedship arriving at an unsuitable planet.`,
+      reward: `function`,
+    },
+    option4: {
+      name: `H20: water scanner`,
+      description: `Water scanner upgraded to work at long range. Damage to the sensor may still result in the seedship arriving at an unsuitable planet.`,
+      reward: `function`,
+    },
+    option5: {
+      name: `RES: resource scanner`,
+      description: `Resource scanner upgraded to work at long range. Damage to the sensor may still result in the seedship arriving at an unsuitable planet.`,
+      reward: `function`,
+    },
+  },
+};
+
 const events = {
   ///
   protoplanetarydisc: {
