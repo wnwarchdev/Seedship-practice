@@ -5,11 +5,13 @@
 let cargoColonists = 1000;
 let cargoProbes = 10;
 
-let scannerAtmosphere = 100;
-let scannerGravity = 100;
-let scannerTemperature = 100;
-let scannerWater = 100;
-let scannerResources = 100;
+let scanners = {
+  scannerAtmosphere: { abb: `ATM`, health: 100, upgrade: 1 },
+  scannerGravity: { abb: `GRAV`, health: 100, upgrade: 1 },
+  scannerTemperature: { abb: `TEMP`, health: 100, upgrade: 1 },
+  scannerWater: { abb: `H20`, health: 100, upgrade: 2 },
+  scannerResources: { abb: `RES`, health: 100, upgrade: 1 },
+};
 
 let systemLanding = 100;
 let systemConstruction = 100;
@@ -61,6 +63,24 @@ const awaitSpinner = function (current) {
 setInterval(() => {
   awaitButton.innerHTML = awaitSpinner(awaitButton.innerHTML);
 }, 300);
+
+//check scanner function
+const checkScanner = function (name) {
+  let scannerName = `scanner` + name;
+  let scannerButton = document.getElementById(scannerName);
+  console.log(scannerName);
+  scanner = scanners[scannerName];
+  console.log(scanner);
+  scannerButton.textContent = `${
+    scanner.upgrade == 1 ? `*` : scanner.upgrade == 2 ? `**` : ``
+  }${scanner.abb}: ${scanner.health}%`;
+};
+
+checkScanner(`Atmosphere`);
+checkScanner(`Gravity`);
+checkScanner(`Temperature`);
+checkScanner(`Water`);
+checkScanner(`Resources`);
 
 const upgrade = {
   upgradeScanner: {
