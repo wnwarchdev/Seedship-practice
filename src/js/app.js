@@ -6,11 +6,11 @@ let cargoColonists = 1000;
 let cargoProbes = 10;
 
 let scanners = {
-  scannerAtmosphere: { abb: `ATM`, health: 100, upgrade: 1 },
-  scannerGravity: { abb: `GRAV`, health: 100, upgrade: 1 },
-  scannerTemperature: { abb: `TEMP`, health: 100, upgrade: 1 },
-  scannerWater: { abb: `H20`, health: 100, upgrade: 2 },
-  scannerResources: { abb: `RES`, health: 100, upgrade: 1 },
+  scannerAtmosphere: { abb: `ATM`, health: 100, upgrade: 0 },
+  scannerGravity: { abb: `GRAV`, health: 100, upgrade: 0 },
+  scannerTemperature: { abb: `TEMP`, health: 100, upgrade: 0 },
+  scannerWater: { abb: `H20`, health: 100, upgrade: 0 },
+  scannerResources: { abb: `RES`, health: 100, upgrade: 0 },
 };
 
 let systemLanding = 100;
